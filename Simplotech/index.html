@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplotech</title>
+    <style>
+        body{
+    background-color:gainsboro;
+    font-family: sans-serif;
+
+
+}
+.navbar{
+    list-style-type: none;
+    display: flex;
+    padding:10px;
+    margin: 4px;
+    gap: 50px;   
+    font-family: sans-serif;
+    justify-content: center;
+    flex-grow: 1;
+         
+}
+.navbar>li>a{
+    text-decoration: none;
+    color: black;
+    
+}
+.navbar-wrapper{
+    display: flex;
+    background-color: whitesmoke;
+    width: 100%;
+    
+}
+.icons{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    margin: 4px;
+    cursor: pointer;
+    
+}
+.image1{
+    width:1247px;
+    height:100%;
+    position: absolute;
+    z-index: -1;
+
+}
+.box{
+    background:linear-gradient(to right, rgb(237, 79, 189),rgb(239, 239, 23));
+    position: relative;
+    top: 320px;
+    height: 100px;
+}
+.loremipsum{
+    width: 450px;
+    padding: 20px;
+    background-color: hsl(2, 79%, 66%,.5);
+    color: white;
+    position:relative;
+    top:100px;
+    left:70px;
+    font-family: sans-serif;
+    
+}
+.loremipsum>h1{
+    font-size: xx-large;
+    margin-bottom:-5px ;
+}
+.menu-wrapper{
+    position: relative;
+    top: 330px;
+    background:linear-gradient(to right, rgb(237, 79, 189),rgb(239, 239, 23));
+    height: 600px;
+    padding: 10px;
+    
+    
+}
+.menu{
+    display: flex;
+    column-gap: 45px;
+    width: 70%;
+    justify-content: center;
+    margin: 5px 200px;
+       
+}
+.heading{
+    margin-left: 45%;
+    font-weight: 600;
+    font-size: xx-large;
+    margin-bottom: 5%;
+    color: white;   
+}
+.bimage,
+.pimage,
+.paimage{
+    width: 100%;
+    height: 55%;
+    border-top-right-radius: 60px;
+}
+
+.burger,
+.pizza,
+.pasta{
+    background-color: white;
+    color: black;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+.button{
+    border-radius: 50px;
+    border-style: none;
+    background-color:rgba(243, 240, 240, 0.5);
+    padding: 15px 40px;
+    font-weight: 600;
+    margin-left:45% ;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* for mobiles*/
+@media only screen and (max-width: 425px) and (min-width:320px){
+    .image1{
+        width:400px;
+        height: 100hv;
+    }
+    .navbar-wrapper{
+        width:400px;
+
+    }
+    .navbar{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        height:auto;
+        gap:30px;
+    }
+    .icons{
+        margin:0px;
+        padding:0px;
+    }
+    .loremipsum{
+        width: 250px;
+        position:relative;
+        top:100px;
+        left:0px;
+        font-size: small;
+    }
+    .loremipsum>h1{
+        font-size: large;
+    }
+    .box{
+        top:180px;
+        width:404px;
+    }
+    .menu-wrapper{
+        width: 385px;
+        top:200px;
+        height: auto;
+    }
+    .menu{
+        display:grid;
+        width: 0px;
+        margin-left: 175px;
+    }
+    .heading{
+        margin-left:125px;
+    }
+    .button{
+        margin-left: 150px;
+    }
+    .burger,
+    .pizza,
+    .pasta{
+        padding: 20px;
+        margin:10px;
+    }
+    
+}
+/*for tablets*/
+@media only screen and (max-width: 768px) and (min-width:424px){
+    .image1{
+        width: 751px;
+        height: 470px;
+    }
+    .navbar-wrapper{
+        width: auto;
+    }
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ; 
+        gap:15px;
+    }
+    .loremipsum{
+        top:80px;
+        left:0px;
+        width: 300px;
+        height: 100px;
+        font-size:small;
+    }
+    .loremipsum>h1{
+        font-size: larger;
+    }
+    .box{
+        width: auto;
+        top:170px;
+        height: 140px;
+        
+    }
+    .menu-wrapper{
+        width:auto;
+        top:180px;
+        height:auto
+    }
+    .menu{
+        display: grid;
+        width: 0px;
+        margin-left: 340px;
+    
+    }
+    .burger,
+    .pizza,
+    .pasta{
+        padding: 20px;
+        margin: 15px;
+        
+    }
+    .heading{
+        display: grid;
+        margin-left:300px;
+        
+    }
+    .button{
+        display: grid;
+        margin: auto;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <img class="image1" src="./img1.jpg"/>
+        </div>
+        <nav class="navbar-wrapper">
+            <ul class="navbar">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Order">Order</a></li>
+                <li><a href="#Food">Food</a></li>
+                <li><a href="#Restaurents">Restaurents</a></li>
+                <li><a href="#Testimonials">Testimonials</a></li>
+                <li><a href="#contactUs">Contact us</a></li>
+            </ul>
+            <div class="icons">
+                <img src="https://pic.onlinewebfonts.com/thumbnails/icons_217620.svg" width="25px" height="25px">
+                <img src="https://pic.onlinewebfonts.com/thumbnails/icons_564248.svg" width="25px" height="25px">
+            </div>
+        </nav>
+        <div class="loremipsum">
+            <h1>LOREM IPSUM</h1>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>  
+        <div class="box"> 
+        </div>  
+    </section>
+    <section id="Order" class="menu-wrapper">
+            <h1 class="heading">Order Now</h1>
+            <div class="menu">
+                <div class="burger">
+                    <img class="bimage"  src="./img4.jpg"/>
+                    <h1>BURGER</h1>
+                    <p>Lorem Ipsum has been the industry's standard dummy text</p>
+                </div>
+                <div class="pizza">
+                    <img class="pimage"  src="./img2.jpg"/>
+                    <h1>PIZZA</h1>
+                    <P>Lorem Ipsum has been the industry's standard dummy text</P>
+                </div>
+                <div class="pasta">
+                    <img class="paimage"  src="./img3.jpg"/>
+                    <h1>PASTA</h1>
+                    <p>Lorem Ipsum has been the industry's standard dummy text</p>
+                </div>
+            </div>
+            <button class="button">Order</button>
+    </section>
+    
+
+    
+
+</body>
+</html>
